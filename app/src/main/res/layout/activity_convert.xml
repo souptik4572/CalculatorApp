@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".convertActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:text="From :"
+                    android:textAllCaps="true"
+                    android:textSize="20sp" />
+
+                <Spinner
+                    android:id="@+id/spinner_from"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:spinnerMode="dialog" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/enter_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:text="Enter Number"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:text=" to :    "
+                    android:textAllCaps="true"
+                    android:textSize="20sp" />
+
+                <Spinner
+                    android:id="@+id/spinner_to"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:spinnerMode="dialog" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/view_answer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:text="Result/Answer"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <View style="@style/calculator_ui_vertical" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/nine"
+                    style="@style/custom_textSize_convert"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:onClick="nine"
+                    android:text="9" />
+
+                <View style="@style/calculator_ui_horizontal" />
+
+                <Button
+                    android:id="@+id/eight"
+                    style="@style/custom_textSize_convert"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:onClick="eight"
+                    android:text="8" />
+
+                <View style="@style/calculator_ui_horizontal" />
+
+                <Button
+                    android:id="@+id/f"
+                    style="@style/custom_textSize_convert"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:onClick="f"
+                    android:text="f" />
+
+                <View style="@style/calculator_ui_horizontal" />
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/image_buttons"
+                    android:onClick="backspace"
+                    android:padding="15dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/baseline_backspace_black_48" />
+            </LinearLayout>
+
+            <View style="@style/calculator_ui_vertical" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/seven"
+                    style="@style/custom_textSize_convert"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:onClick="seven"
+                    android:text="7" />
+
+                <View style="@style/calculator_ui_horizontal" />
+
+                <Button
+                    android:id="@+id/six"
+                    style="@style/custom_textSize_convert"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:onClick="six"
+                    android:text="6" />
+
+                <View style="@style/calculator_ui_horizontal" />
+                <!-- -->
+
+                <Button
+                    android:id="@+id/e"
+                    style="@style/custom_textSize_convert"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:onClick="e"
+                    android:text="e" />
+
+                <View style="@style/calculator_ui_horizontal" />
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/image_buttons"
+                    android:onClick="refresh"
+                    android:scaleType="center"
+                    android:src="@drawable/refresh" />
+            </LinearLayout>
+
+            <View style="@style/calculator_ui_vertical" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/five"
+                    style="@style/custom_textSize_convert"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:onClick="five"
+                    android:text="5" />
+
+                <View style="@style/calculator_ui_horizontal" />
+
+                <Button
+                    android:id="@+id/four"
+                    style="@style/custom_textSize_convert"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:onClick="four"
+                    android:text="4" />
+
+                <View style="@style/calculator_ui_horizontal" />
+                <!-- <Button
+                    android:id="@+id/two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2"
+
+                    style="@style/custom_textSize_convert" />
+                <View
+                    style="@style/calculator_ui_horizontal"/>
+                <Button
+                    android:id="@+id/one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1" -->
+
+                style="@style/custom_textSize_convert" />
+
+                <Button
+                    android:id="@+id/d"
+                    style="@style/custom_textSize_convert"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:onClick="d"
+                    android:text="d" />
+
+                <View style="@style/calculator_ui_horizontal" />
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/image_buttons"
+                    android:onClick="equals"
+                    android:padding="15dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/equals_to" />
+            </LinearLayout>
+
+            <View style="@style/calculator_ui_vertical" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/three"
+                    style="@style/custom_textSize_convert"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:onClick="three"
+                    android:text="3" />
+
+                <View style="@style/calculator_ui_horizontal" />
+
+                <Button
+                    android:id="@+id/two"
+                    style="@style/custom_textSize_convert"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:onClick="two"
+                    android:text="2" />
+
+                <View style="@style/calculator_ui_horizontal" />
+
+                <Button
+                    android:id="@+id/c"
+                    style="@style/custom_textSize_convert"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+
+                    android:onClick="c"
+                    android:text="C" />
+
+                <View style="@style/calculator_ui_horizontal" />
+
+                <Button
+                    android:id="@+id/point"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/image_buttons"
+                    android:gravity="center"
+                    android:text="."
+                    android:textSize="35sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <View style="@style/calculator_ui_vertical" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/one"
+                    style="@style/custom_textSize_convert"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:onClick="one"
+                    android:text="1" />
+
+                <View style="@style/calculator_ui_horizontal" />
+
+                <Button
+                    android:id="@+id/zero"
+                    style="@style/custom_textSize_convert"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:onClick="zero"
+                    android:text="0" />
+
+                <View style="@style/calculator_ui_horizontal" />
+                <!-- <Button
+                    android:id="@+id/a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="a"
+                    style="@style/custom_textSize_convert" />
+                <View
+                    style="@style/calculator_ui_horizontal"/>
+                <Button
+                    android:id="@+id/b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="b"
+                    style="@style/custom_textSize_convert" /> -->
+                <Button
+                    android:id="@+id/b"
+                    style="@style/custom_textSize_convert"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+
+                    android:onClick="b"
+                    android:text="B" />
+
+                <View style="@style/calculator_ui_horizontal" />
+
+                <Button
+                    android:id="@+id/a"
+                    style="@style/custom_textSize_convert"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="a"
+                    android:text="A" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
