@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#009688</color>
+    <color name="colorPrimaryDark">#00695C</color>
+    <color name="colorAccent">#4DB6AC</color>
+    <color name="ViewSeparationVertical">#424242</color>
+    <color name="ViewSeparationHorizontal">#616161</color>
+    <color name="button_pressed">#F50057</color>
+    <color name="button_focused">#F50057</color>
+    <color name="button_default">#FFFFFF</color>
+    <color name="button_default_convert">#E3F2FD</color>
+    <color name="button_pressed_convert">#1976D2</color>
+    <color name="button_focused_convert">#1976D2</color>
+    <color name="image_buttons_default">#F3E5F5</color>
+    <color name="image_buttons_focused">#7B1FA2</color>
+    <color name="image_buttons_pressed">#7B1FA2</color>
+</resources>
